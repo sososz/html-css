@@ -17,10 +17,71 @@
     padding: 0px;
 }
 
-body {
+html, body {
     min-height: 100vh;
 }
 
+
+header {
+    background-color: #000000;
+    padding: 80px;
+}
+
+header > h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10em;
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 50px;
+}
+
+header a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main {
+    min-width: 1000px;
+}
+main p {
+    max-width: 600px;
+    font-size: 3em;
+    font-family: var(--fonte-conteudo);
+    margin: 100px 0px 150px 30px;
+    line-height: 2.0;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: #FFFFFF;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0.253);
+}
+
+/*
 article#container {
     background-color: #0000007a;
     padding: 0px 0px 8px 3px;
@@ -74,48 +135,13 @@ section#q2 {
     background-image: url('../imagens/background002.jpg');
     background-position: center center;
 }
-
-header {
-    background-color: #000000;
-    padding: 80px;
-}
-
-header>h1 {
-    color: #FFFFFF;
-    text-align: center;
-    font-family: var(--fonte-titulo);
-    font-size: 10em;
-}
-
-header>p {
-    color:#FFFFFF;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-header a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-main {
-    min-width: 1000px;
-}
-main p {
-    max-width: 600px;
-    font-size: 3em;
-    font-family: var(--fonte-conteudo);
-    margin: 100px 0px 150px 30px;
-    line-height: 2.0;
-}
+*/
 
 footer {
     text-align: center;
     background-color: #000000;
-    color: #FFFFFF;
-    margin: 50px 0px 0px 0px;
-    padding: 3px 0px 0px 0px;
+    color: #FFFFFF; 
+    padding: 10px;
     font-size: 1.2em;
 }
 
