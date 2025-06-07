@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,10 +28,24 @@
             background-color: lightgray;
         }
 
-        thead {
-            background-color: gray;
+        thead, tfoot {
+            background-color: rgb(41, 41, 41);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(41, 41, 41);
+        }
+        
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        /* nth-child(2n), nth-child(3n)...
+            odd: somente em linhas [impar] 2n-1
+            even: somente em linhas [pares] 2n */
 
         td.num {
             text-align: right;
