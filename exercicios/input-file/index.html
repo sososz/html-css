@@ -1,0 +1,46 @@
+<div class="col-sm-12 col-md-6">
+    <label for="formFileSm" class="form-label"></label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+<div class="col-sm-12 col-md-6 p-0 mt-3">
+      <button type="button" id="custom-button" @click="handlerButtonClick">
+      <i class="bi bi-upload"></i> 
+      Escolher arquivo 
+      </button>
+      <span id="custom-text">Nenhum arquivo escolhido</span>
+</div>
+
+<style>
+#custom-text {
+  color: white;
+  background-color: white ;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: sans-serif;
+  color: #00000086;
+  height: 31px;
+  padding: 6px;
+  font-size: 1em;
+  padding-right: 50px;
+  border-radius: 0px 4px 4px 0px;
+  
+}
+
+#custom-button {
+  background-color: #008DB9;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  height: 31px;
+  border-radius: 4px 0px 0px 4px;
+  font-size: 1em;
+  width: 200px;
+  
+}
+
+#custom-button:hover {
+  background-color: #5BC0DE ;
+}
+
+</style>
